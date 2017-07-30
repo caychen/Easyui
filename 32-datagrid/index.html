@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.5.1/themes/default/easyui.css">
+        <link rel="stylesheet" type="text/css" href="../jquery-easyui-1.5.1/themes/icon.css">
+    </head>
+    <body>
+
+        <!--class加载方式
+        <table class="easyui-datagrid">
+            <thead>
+                <tr>
+                    <th data-options="field:'user'">帐号</th>
+                    <th data-options="field:'email'">邮箱</th>
+                    <th data-options="field:'date'">注册时间</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amy1</td>
+                    <td>Amy1@qq.com</td>
+                    <td>2016-10-10</td>
+                </tr>
+                <tr>
+                    <td>Amy2</td>
+                    <td>Amy2@qq.com</td>
+                    <td>2015-10-10</td>
+                </tr>
+                <tr>
+                    <td>Amy3</td>
+                    <td>Amy3@qq.com</td>
+                    <td>2017-10-10</td>
+                </tr>
+            </tbody>
+        </table> -->
+
+        <a href="#" class="easyui-linkbutton">添加</a>
+        <table id="data"></table>
+
+        <hr/>
+        <ul id="ed" title="Basic DataList" lines="true" style="width:400px;height:250px">
+        </ul>
+
+        <script type="text/javascript" src="../jquery-easyui-1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="../jquery-easyui-1.5.1/jquery.easyui.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#ed").datalist({
+                    
+                    lines: true,
+                    
+                    data:[{"text":"aaaaaaaaaaaa"},
+                        {"text":"bbbbbbbbbbbbbbbb"},
+                        {"text":"cccccccccc"},
+                        {"text":"ddddddddd"}],
+                        
+                    checkbox:true,
+                });
+            });
+
+        </script>
+    </body>
+</html>
